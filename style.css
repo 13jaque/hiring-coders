@@ -1,9 +1,32 @@
 body {
-
-background-color: black;
-font-family: Arial, sans-serif;
+   
+    background-image: url(img/fundo.jpg);
+    font-family: Arial, sans-serif;
     font-size: 120%;
     padding: 20px;
+
+}
+
+.titulo-desconto {
+
+    color: white;
+    font-family: 'Brush Script MT';
+    font-size: 35px;
+    position: relative;
+    bottom: -80px;
+    left: 37px;
+    margin-top: -50px;
+    
+}
+
+.sub-desconto {
+
+    color: white;
+    font-size: 11px;
+    position: relative;
+    text-align: center;
+    bottom: -54px;
+    left: 38px;
 
 }
 
@@ -36,37 +59,49 @@ p {
 }
 
 .b1, .b2, .b3, .b4 {
+
     background-color: red;
+
 }
+
 .b1, .b2 {
+
     width: 5px;
     height: 50%;
     position: absolute;
+
 }
+
 .b3, .b4 {
+
     width: 50%;
     height: 5px;
     position: absolute;
+
 }
+
 .b1, .b3 {
-    top: -186px;
-    left: -100px;
+
+    top: -250px;
+    left: -105px;
+
 }
+
 .b2, .b4 {
-    bottom: 15px;
-    right: -90px;
+
+    bottom: 25px;
+    right: -180px;
+
 }
 
 .porcentagem {
 
     width: 143px;
     height: 143px;
-    /*background: rgb(189, 172, 172);*/
     border-radius: 50%;
     position: absolute;
     top: 40px;
     right: -120px;
-    /*box-shadow: 5px 15px 1px #1a1e21;*/
 
 }
 
@@ -79,7 +114,9 @@ p {
     display: block;
     color: #f0123e;
     margin-right: -20px;
-    font-family: 'Caviar Dreams';
+    font-family: initial;
+    position: absolute;
+    left: 100px;
 
 }
 
@@ -88,10 +125,12 @@ p {
     font-size: 22.86px;
     transform: rotate(15deg);
     display: block;
-    margin-top: -25px;
+    margin-top: 65px;
     text-transform: uppercase;
-    font-family: 'Caviar Dreams';
+    font-family: initial;
     color: #fff;
+    position: absolute;
+    left: 100px;
 
 }
 
@@ -149,25 +188,21 @@ a, a:visited {
   
 .button {
 
-    height: 58px;
-    width: 120%;
-    max-width: 330px;
-    font-size: 22.67px;
+    max-width: 178px;
+    font-size: 15px;
     text-transform: uppercase;
-    margin: 19px auto 0;
-    background: #f0123e;
     border-radius: 40px;
-    display: block;
-    line-height: 58px;
+    border-color: red;
+    border-style: outset;
+    line-height: 42px;
     color: #fff;
-    transition: all .6s ease;
-    margin-top: -90px;
-    margin-left: -235px;
+    margin-top: 30px;
+    margin-left: -170px;
     text-align: center;
 
 }
   
-.btn-cadastrar{
+.btn-cadastrar {
 
     margin: 26px 26%;
     border-radius: 40px;
@@ -181,7 +216,7 @@ a, a:visited {
 
 }
   
-.btn-fechar{
+.btn-fechar {
   
     background: red;
     line-height: 25px;
@@ -198,7 +233,7 @@ a, a:visited {
 .segundo-bloco .container {
 
     background: red;
-    padding-bottom: 245px;
+    padding-bottom: 300px;
     width: 978px;
 
 }
@@ -226,21 +261,204 @@ text-align: center!important;
 
 .titulo {
 
-    font-size: 50.67px;
-    font-family: 'Gotham Narrow';
+    font-size: 55px;
+    font-family: fangsong;
     font-weight: bold;
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 
-.sub-titulo{
+.sub-titulo {
 
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     padding: 0 20px;
-    margin-top: -30px;
+    margin-top: -40px;
+
+}
+
+.contagem-dias {
+
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    position: absolute;
+    left: 287px;
+    top: 145px;
+    font-family: system-ui;
+    float: left;
+    
+}
+
+.contagem-horas {
+
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    position: absolute;
+    left: 404px;
+    top: 144px;
+    font-family: system-ui;
+    float: left;
+    
+}
+
+.contagem-minutos {
+
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    position: absolute;;
+    left: 517px;
+    top: 146px;
+    font-family: system-ui;
+    float: left;
+    
+}
+
+.contagem-segundos {
+
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    position: absolute;
+    left: 622px;
+    top: 147px;
+    font-family: system-ui;
+    float: left;
+    
+}
+
+.circuloD {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin: 15px;
+    transition: 0.3s ease;
+    background: #dc3545;
+    opacity: 0.5;
+    left: 257px;
+    top: 120px;
+    position: absolute;
+}
+
+.circuloD:hover {
+
+    transform: rotateY(180deg);
+    
+}
+
+.circuloH {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin: 15px;
+    transition: 0.3s ease;
+    background: #dc3545;
+    opacity: 0.5;
+    left: 366px;
+    top: 120px;
+    position: absolute;
+
+}
+
+.circuloH:hover {
+
+    transform: rotateY(180deg);
+    
+}
+
+.circuloM {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin: 15px;
+    transition: 0.3s ease;
+    background: #dc3545;
+    opacity: 0.5;
+    left: 475px;
+    top: 120px;
+    position: absolute;
+
+}
+
+.circuloM:hover {
+
+    transform: rotateY(180deg);
+    
+}
+
+.circuloS {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin: 15px;
+    transition: 0.3s ease;
+    background: #dc3545;
+    opacity: 0.5;
+    left: 584px;
+    top: 120px;
+    position: absolute;
+
+}
+
+.circuloS:hover {
+
+    transform: rotateY(180deg);
+    
+}
+
+.legenda-dias {
+
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    left: 358px;
+    top: 255px;
+
+}
+
+.legenda-horas {
+
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    left: 458px;
+    top: 255px; 
+
+}
+
+.legenda-minutos {
+
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    left: 560px;
+    top: 255px; 
+
+}
+
+.legenda-segundos {
+
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    left: 661px;
+    top: 255px;
 
 }
 
@@ -250,11 +468,13 @@ footer .container {
     line-height: 75px;
     background: black;
     padding-bottom: 300px;
-    width: 977px;
+    width: 978px;
+    position: relative;
+    top: 30px;
 
 }
 
-.dev{
+.dev {
 
     color: white;
     position: relative;
@@ -265,7 +485,75 @@ footer .container {
 
 }
 
-.terceiro-bloco {
+.terceiro-bloco .container {
+
+    background: #1f2930;
+    height: 600px;
+    left: -244px;
+    width: 490px;
+
+}
+
+.terceiro-bloco .texto-bloco {
+
+    padding-left: 105px;
+    padding-right: 52px;
+
+}
+
+.texto-oferta {
+
+    font-size: 18px;
+    font-family: monospace;
+    color: #fff;
+    margin-top: 114px;
+    
+}
+
+.texto-grande {
+
+    margin-top: 80px;
+    font-weight: 900;
+    font-family: monospace;
+    color: #fff;
+    font-size: 80px;
+    text-align: right;
+    margin-left: -100px;
+
+}
+
+.desconto-oferta {
+
+    font-size: 76px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #f0123e;
+    text-align: center;
+
+}
+
+.code {
+
+    font-size: 18px;
+    font-family: monospace;
+    color: #fff;
+    margin-top: 125px;
+    text-align: right;
+    padding-bottom: 140px;
+    position: relative;
+    left: -40px;
+
+}
+
+.bloco-img {
+
+    position: absolute;
+    bottom: 0px;
+    left: 489px;
+
+}
+
+.quarto-bloco {
 
     -webkit-box-align: center!important;
     align-items: center!important;
@@ -317,7 +605,7 @@ footer .container {
 
 }
 
-.youtube{
+.youtube {
 
     position: relative;
     margin: 215px;
@@ -325,7 +613,7 @@ footer .container {
 
 }
 
-.github{
+.github {
 
     position: relative;
     margin: 69px;
@@ -334,7 +622,7 @@ footer .container {
 
 }
 
-.linkedin{
+.linkedin {
 
     position: relative;
     margin: 119px;
@@ -346,7 +634,19 @@ footer .container {
 
 @media only screen and (max-width:820px) {
 
-    .container{
+    .container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .footer .container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .terceiro-bloco .container {
 
         grid-template-columns: 1fr;
 
